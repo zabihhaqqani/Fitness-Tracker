@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useSelector, useDispatch } from "react-redux";
+import { Routes, Route } from "react-router-dom";
+
+import { Dashboard } from "./pages/Dashboard";
+import NavBar from "./components/NavBar/NavBar";
+import Exercises from "./pages/Exercises";
+import Food from "./pages/Food";
+import Goal from "./pages/Goal";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/exercises" element={<Exercises />} />
+        <Route path="/food" element={<Food />} />
+        <Route path="/goal-tracker" element={<Goal />} />
+      </Routes>
     </div>
   );
 }

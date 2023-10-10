@@ -1,0 +1,39 @@
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: rgba(209, 209, 209, 0.199);
+    justify-content: center;
+    align-items: center;
+}
+
+.form input,select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin: 0.5rem;
+}
+
+.form option {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin: 0.5rem;
+}
+
+
+.form button {
+    border: none;
+    padding: 0.5rem;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+  font-family: "Oswald", sans-serif;
+
+}
+
+.form button:hover{
+    background-color: rgba(0, 0, 0, 0.822);
+}
