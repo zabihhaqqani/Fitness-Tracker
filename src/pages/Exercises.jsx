@@ -14,7 +14,6 @@ const Exercises = () => {
 
   return (
     <div>
-
       <ExerciseForm />
       <div>
         {exercises?.length > 0 ? (
@@ -22,9 +21,17 @@ const Exercises = () => {
             {exercises?.map((data) => {
               return (
                 <div key={data?._id} className="card">
-                  <p>ExerciseName: {data?.exerciseName}</p>
-                  <p>Time: {data?.duration} mins</p>
-                  <p>Calories Burned: {data?.caloriesBurned}</p>
+                  <p>
+                    <strong>Name: </strong>
+                    {data?.exerciseName}
+                  </p>
+                  <p>
+                    <strong>Time: {data?.duration} mins</strong>
+                  </p>
+                  <p>
+                    {" "}
+                    <strong>Calories Burned: {data?.caloriesBurned}</strong>
+                  </p>
                   <button onClick={() => dispatch(deleteExercise(data._id))}>
                     Delete
                   </button>

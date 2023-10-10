@@ -16,10 +16,9 @@ export const fetchGoalsData = () => async (dispatch) => {
 export const addGoal = (goalDetails) => async (dispatch) => {
   try {
     const response = await axios.post(apiEndpoint, goalDetails);
-    const data = response.data.newGoal;
     dispatch({
       type: "ADD_GOAL",
-      payload: data,
+      payload: response.data.newGoal,
     });
   } catch (error) {
     console.error("Error fetching data:", error);

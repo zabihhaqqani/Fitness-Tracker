@@ -14,17 +14,16 @@ const GoalForm = () => {
   });
 
   const inputHandler = (e) => {
-    const { name, value } = e.target;
     setGoalDetails((prev) => ({
       ...prev,
-      [name]: name === "targetCaloriesValue" ? parseFloat(value) : value,
+      [e.target.name]: e.target.value,
     }));
   };
 
   const submitHandler = async (e) => {
     e.preventDefault();
 
-    await dispatch(addGoal(goalDetails));
+     dispatch(addGoal(goalDetails));
 
     setGoalDetails({
       goalName: "",

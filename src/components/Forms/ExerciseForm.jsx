@@ -10,18 +10,17 @@ const ExerciseForm = () => {
     duration: "",
   });
 
-  const inputHandler = (e) => {
-    const { name, value } = e.target;
-    setExerciseDetails((prev) => ({
-      ...prev,
-      [name]: name === "duration" ? parseFloat(value) : value,
-    }));
-  };
+   const inputHandler = (e) => {
+     setExerciseDetails((prev) => ({
+       ...prev,
+       [e.target.name]: e.target.value,
+     }));
+   };
 
   const submitHandler = async (e) => {
     e.preventDefault();
     dispatch(addExercise(exerciseDetails));
-    setExerciseDetails({ exerciseName: "", duration: 0 });
+    setExerciseDetails({ exerciseName: "", duration: "" });
   };
 
   return (
