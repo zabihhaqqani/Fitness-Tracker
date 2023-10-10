@@ -12,11 +12,13 @@
   margin: 1rem;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 450px;
+  max-width: 350px;
   border: 1px solid #ddd;
   position: relative;
   transition: all 0.25s;
   text-align: left;
+  justify-content: space-between;
+
 }
 
 .card button {
