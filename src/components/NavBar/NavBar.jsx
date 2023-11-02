@@ -34,6 +34,13 @@ const NavBar = () => {
           >
             Goals
           </NavLink>
+          <NavLink
+            className="navbar-items"
+            style={getActiveStyle}
+            to="https://github.com/zabihhaqqani/Fitness-Tracker"
+          >
+            Github
+          </NavLink>
         </nav>
       </div>
   
