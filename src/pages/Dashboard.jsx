@@ -31,7 +31,7 @@ export const Dashboard = () => {
     dispatch(fetchExercisesData());
     dispatch(fetchFoodsData());
     dispatch(fetchGoalsData());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="dashboard">
