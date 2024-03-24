@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiEndpoint =
-  "https://fitness-tracker-api.zabihhaqqani1.repl.co/api/exercises";
+  "https://0b8a5fe4-5e3d-441c-b46f-bbaf321d6431-00-1lvt3jttw7xix.pike.replit.dev/api/exercises";
 
 
 export const fetchExercisesData = () => async (dispatch) => {
