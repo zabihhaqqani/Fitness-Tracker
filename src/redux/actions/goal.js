@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiEndpoint =
-  "https://0b8a5fe4-5e3d-441c-b46f-bbaf321d6431-00-1lvt3jttw7xix.pike.replit.dev/api/goals";
+  "https://fitness-tracker-backend-icl8.onrender.com/api/goals";
 
 export const fetchGoalsData = () => async (dispatch) => {
   try {
